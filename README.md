@@ -16,3 +16,37 @@ yarn dev
 pnpm dev
 # hoac
 bun dev
+## cấu trúc dự án
+src/
+├── app/                    # Next.js App Router
+│   ├── (default)/         # Default layout group
+│   │   ├── page.tsx       # Home page with movie listings
+│   │   ├── HomeClient.tsx # Client-side home component
+│   │   ├── movies/        # Movie-related pages
+│   │   │   ├── page.tsx   # Movies listing page
+│   │   │   └── [id]/      # Movie detail pages
+│   │   ├── booking/       # Booking flow
+│   │   │   └── [movieId]/ # Seat selection page
+│   │   ├── checkout/      # Payment checkout
+│   │   │   └── page.tsx   # Customer info & payment
+│   │   └── confirmation/  # Booking confirmation
+│   │       └── page.tsx   # Success page with ticket
+│   ├── globals.css        # Global styles and Tailwind
+│   └── layout.tsx         # Root layout with providers
+├── components/            # Reusable components
+│   ├── ui/               # Basic UI components
+│   ├── skeletons/        # Loading skeleton components
+│   │   ├── HomeSkeleton.tsx
+│   │   ├── MovieSkeleton.tsx
+│   │   ├── ArticleSkeleton.tsx
+│   │   └── CommonSkeleton.tsx
+│   └── test/             # Development test components
+├── types/                # TypeScript definitions
+│   ├── global-type.ts    # Main type definitions
+│   └── format-price.ts   # Price formatting utilities
+├── lib/                  # Utility functions
+├── public/              # Static assets
+│   ├── images/          # Image assets
+│   └── icons/           # Icon files
+└── docs/                # Documentation
+    └── SKELETON_LOADING.md
