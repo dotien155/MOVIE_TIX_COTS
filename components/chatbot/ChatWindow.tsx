@@ -4,6 +4,7 @@ import { MessageBubble } from './MessageBubble';
 import { TypingIndicator } from './TypingIndicator';
 import { QuickReplies } from './QuickReplies';
 import { ChatInput } from './ChatInput';
+
 import { Message } from '../../types/types';
 
 interface ChatWindowProps {
