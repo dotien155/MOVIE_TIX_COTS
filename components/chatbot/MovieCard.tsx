@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+
 import { Movie, Showtime } from '../../types/types';
 
 interface MovieCardProps {

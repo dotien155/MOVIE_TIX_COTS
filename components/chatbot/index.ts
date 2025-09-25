@@ -7,4 +7,5 @@ export { MovieCard } from './MovieCard';
 export { QuickReplies } from './QuickReplies';
 export { TypingIndicator } from './TypingIndicator';
 export { useChatbot } from '../../src/hooks/useChatbot';
+
 export type { Movie, Message } from '../../types/types';
