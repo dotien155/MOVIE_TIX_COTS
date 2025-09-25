@@ -1,4 +1,6 @@
+
 import { Message, Movie, Showtime } from '../../types/types';
+
 import { MovieCard } from './MovieCard';
 
 interface MessageBubbleProps {
